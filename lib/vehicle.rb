@@ -68,6 +68,7 @@ class Vehicle
 
 ##############################
 
+
   def cool_vehicle(model, model_year)
     model == "Tacoma" && model_year == 2007
   end
