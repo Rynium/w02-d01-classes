@@ -1,4 +1,13 @@
-class Truck
+#Describes houses
+#How many floors including the basement
+#Is the basement finished t/f
+#What is the color
+#Does it have shutters t/f
+#What year was it built
+
+
+
+class House
   attr_reader :floors, :finished_basement, year_built
   attr_accessor :color, :shutters
 
