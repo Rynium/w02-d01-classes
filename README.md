@@ -3,7 +3,6 @@
 Three classes:
 ***Cars**
 -Doors
--Drivetrain
 -Color
 -Model Year
 -Manufacturer
@@ -44,4 +43,3 @@ Your readme should describe the three classes in brief.
 Make sure to include getter and setter methods. If you want to, you can add additional methods.
 
 Don't worry about writing tests yet. Just create the folder for it.
-
