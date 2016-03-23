@@ -3,6 +3,7 @@ require_relative "../lib/computer.rb"
 
 class ComputerTest < Minitest::Test
 
+  #tests that computer_make getters and setters work.
   def test_computer_make
     computer = Computer.new(make:"Lenovo", model: "Yoga 2 Pro", operating_system: "Linux 14.4")
     actual = computer.make
@@ -14,6 +15,7 @@ class ComputerTest < Minitest::Test
     assert_equal('Apple', actual, "'Apple' as a string should be returned")
   end
 
+  #tests that computer_model getters and setters work.
   def test_computer_model
     computer = Computer.new(make:"Lenovo", model: "Yoga 2 Pro", operating_system: "Linux 14.4")
     actual = computer.model
@@ -25,6 +27,7 @@ class ComputerTest < Minitest::Test
     assert_equal('Macbook Pro', actual, "'Macbook Pro' as a string should be returned")
   end
 
+  #tests that operating_system getters and setters work.
   def test_operating_system
     computer = Computer.new(make:"Lenovo", model: "Yoga 2 Pro", operating_system: "Linux 14.4")
     actual = computer.operating_system

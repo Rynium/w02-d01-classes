@@ -1,3 +1,4 @@
+
 # This class describes car objects.
 # door_num is an integer describing the nubmer of doors.
 # color is a string that represents the color of the car.
@@ -15,10 +16,13 @@ class Vehicle
     @model_year   = model_year
     @manufacturer = manufacturer
     @model        = model
-    @home_address = nil
-
+    @house        = nil
+    @comouter     = nil
   end
 
+  def house=(house)
+    @house = house
+  end
 
 
 end
