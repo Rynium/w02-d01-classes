@@ -9,11 +9,11 @@
 class House
   attr_accessor :color, :floors, :year_built, :address
 
-  def initialize(:color, :floors, :year_built, :address)
-    @floors             = :floors
-    @color              = :color
-    @year_built         = :year_built
-    @address            = :address
+  def initialize(color:, floors:, year_built:, address:)
+    @floors             = floors
+    @color              = color
+    @year_built         = year_built
+    @address            = address
   end
 
 end

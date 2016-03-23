@@ -5,13 +5,13 @@
 # home_address is a string that is equal to the address from 'home.rb'
 
 
-class Computers
+class Computer
   attr_accessor :make, :model, :operating_system
 
-  def initialize(:make, :model, :operating_system)
-    @make             = :make
-    @model            = :model
-    @operating_system = :operating_system
+  def initialize(make:, model:, operating_system:)
+    @make             = make
+    @model            = model
+    @operating_system = operating_system
     @home_address     = nil
   end
 

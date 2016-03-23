@@ -10,11 +10,11 @@
 class Vehicle
   attr_accessor :color, :model_year, :manufacturer, :model
 
-  def initialize(:color, :model_year, :manufacturer, :model)
-    @color        = :color
-    @model_year   = :model_year
-    @manufacturer = :manufacturer
-    @model        = :model
+  def initialize(color:, model_year:, manufacturer:, model:)
+    @color        = color
+    @model_year   = model_year
+    @manufacturer = manufacturer
+    @model        = model
     @home_address = nil
 
   end
