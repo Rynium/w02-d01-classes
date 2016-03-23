@@ -19,9 +19,24 @@ class Computer
     @house = house
   end
 
+  def house
+    @house
+  end
+  
   def turn_lights_off
     @house.turn_lights_off
   end
 
+  def turn_lights_on
+    @house.turn_lights_on
+  end
+
+  def test_turn_safe_mode_on
+    @house.test_turn_safe_mode_on
+  end
+
+  def test_turn_safe_mode_off
+    @house.test_turn_safe_mode_off
+  end
 
 end

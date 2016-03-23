@@ -1,6 +1,6 @@
 require 'test_helper.rb'
 require_relative "../lib/computer.rb"
-
+require_relative "../lib/house.rb"
 class ComputerTest < Minitest::Test
 
   #tests that computer_make getters and setters work.
@@ -39,4 +39,26 @@ class ComputerTest < Minitest::Test
     assert_equal('El Captain', actual, "'El Captain' as a string should be returned")
   end
 
+
+  def test_computer_lights_on
+    ryans_house = House.new(color: "Gray", floors: 2, year_built: 2003, address: '274 Baker St', lights: false, safe_mode:true)
+    ryans_pc = Computer.new(make: "Lenovo", model: "Yoga 2 Pro", operating_system: "Linux 14.4")
+
+    ryans_house.computer=(ryans_pc)
+    ryans_pc.house.lights_on
+    actual = ryans_pc.house.lights
+
+    assert_equal(true , actual, "'true' as a boolean should be returned")
+  end
+
+  def test_computer_safe_mode_on
+    ryans_house = House.new(color: "Gray", floors: 2, year_built: 2003, address: '274 Baker St', lights: false, safe_mode:true)
+    ryans_pc = Computer.new(make: "Lenovo", model: "Yoga 2 Pro", operating_system: "Linux 14.4")
+
+    ryans_house.computer=(ryans_pc)
+    ryans_pc.house.safe_mode_on
+    actual = ryans_pc.house.safe_mode
+
+    assert_equal(true , actual, "'true' as a boolean should be returned")
+  end
 end
