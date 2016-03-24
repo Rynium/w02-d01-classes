@@ -3,7 +3,7 @@
 # model is a string that represents the color of the car.
 # operating_system is a string that represents the os of the computer.
 # home_address is a string that is equal to the address from 'home.rb'
-require 'house.rb'
+require_relative 'house.rb'
 
 class Computer
   attr_accessor :make, :model, :operating_system
@@ -22,7 +22,7 @@ class Computer
   def house
     @house
   end
-  
+
   def turn_lights_off
     @house.turn_lights_off
   end
